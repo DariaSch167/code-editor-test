@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "server": "json-server -w db.json -p 3001"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@codemirror/lang-javascript": "^6.2.2",

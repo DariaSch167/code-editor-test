@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "description": "Create a function named factorial to calculate the factorial of a number. The function should print the result of factorial(20)",
+    "javascript": "function factorial(n) { if (n === 0) return 1; else return n * factorial(n - 1); } console.log(factorial(20));",
+    "python": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\nprint(factorial(20))",
+    "result": "2432902008176640000"
+  },
+  {
+    "id": 2,
+    "description": "Create a function named sum which contains two parameters a,b. Print the results for sum(5,6)",
+    "javascript": "function sum(a,b) { return a + b; } console.log(sum(5,6));",
+    "python": "def sum(a,b):\n    return a + b\nprint(sum(5,6))",
+    "result": "11"
+  },
+  {
+    "id": 3,
+    "description": "Print \"Hello world!\"",
+    "javascript": "console.log(\"Hello world!\");",
+    "python": "print(\"Hello world!\")",
+    "result": "Hello world!"
+  }
+]
