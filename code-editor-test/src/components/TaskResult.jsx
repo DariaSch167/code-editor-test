@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 
 const TaskResult = ({ result }) => {
   return (
-    <div>
-      <h2>Result:</h2>
+    <div className="code-editor__result">
+      <h2>Result</h2>
       {result.status === "success" ? (
-        <pre className="code-editor__result__output">{result.output}</pre>
+        <p className="code-editor__result__output">{result.output}</p>
       ) : (
-        <pre className="code-editor__result__error">{result.error}</pre>
+        <p className="code-editor__result__error">{result.error}</p>
       )}
     </div>
   );

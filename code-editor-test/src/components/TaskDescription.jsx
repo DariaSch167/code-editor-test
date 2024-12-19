@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 const TaskDescription = ({ task }) => {
   return (
     <div className="code-editor__task">
-      <h2>Task:</h2>
-      <p className="code-editor__description">{task}</p>
+      <h2>Task</h2>
+      <p className="code-editor__task__description">{task}</p>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import CodeEditorFull from "./components/CodeEditorFull";
 
 function App() {
   return (
-    <main>
+    <main className="main">
       <div className="main__title">
         <h1>Code Editor</h1>
         <p>CodeMirror & Mock-server MirageJS</p>

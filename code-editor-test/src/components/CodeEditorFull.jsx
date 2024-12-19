@@ -3,6 +3,7 @@ import TaskDescription from "./TaskDescription";
 import TaskResult from "./TaskResult";
 import CodeEditor from "./CodeEditor";
 import { loadTask, checkNextTask, runCode } from "../api/api";
+import "../styles.scss";
 
 const CodeEditorFull = () => {
   const [language, setLanguage] = useState("javascript");
@@ -59,12 +60,18 @@ const CodeEditorFull = () => {
   };
 
   return (
-    <>
-      <div className="navigation-buttons">
-        <button onClick={handlePrevTask} disabled={taskId === 1}>
-          Previous Task
+    <div className="code-editor__wrapper">
+      <div className="code-editor__nav">
+        <button
+          onClick={handlePrevTask}
+          disabled={taskId === 1}
+          className="code-editor__nav__btn">
+          Prev Task
         </button>
-        <button onClick={handleNextTask} disabled={!hasNextTask}>
+        <button
+          onClick={handleNextTask}
+          disabled={!hasNextTask}
+          className="code-editor__nav__btn">
           Next Task
         </button>
       </div>
@@ -76,8 +83,8 @@ const CodeEditorFull = () => {
         setCode={setCode}
         handleRun={handleRun}
       />
-      {result && <TaskResult result={result} />}
-    </>
+      <TaskResult result={result ? result : ""} />
+    </div>
   );
 };
 
