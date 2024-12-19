@@ -17,10 +17,11 @@ https://dariasch167.github.io/code-editor-test/
 React, Vite, Sass, CodeMirror, MirageJS
 
 ## Инструкция по установке и запуску
+- cd code-editor-test
 - npm install
 - npm run dev
 - Приложение запустится на http://localhost:5173/code-editor-test/
-- Для тестирования правильных ответов использовать данные из tasks.json 
+- Для тестирования правильных ответов использовать данные из tasks.json
 
 ## Логика обработки запросов на мок-сервере
 - server/tasks.json, массив с задачами: id, описание, правильный ответ на JS и Python, результат
